@@ -63,6 +63,8 @@ AppDelegate *appDelegate;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //test something for github
+    //more something
     
     /*Navigation bar*/
     UIImageView *titleImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Home_Logo.png"]];
