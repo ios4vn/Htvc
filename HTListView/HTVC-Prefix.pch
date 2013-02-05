@@ -1,0 +1,29 @@
+//
+// Prefix header for all source files of the 'HTListView' target in the 'HTListView' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+
+#define SharedAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+#define kDomain         @"http://smsviet.vn/tvguide/"
+#define kPageNumber     0
+#define kPageSize       15
+#define kUid            [[UIDevice currentDevice] uniqueIdentifier]
+#define timesBefore     [[NSArray alloc] initWithObjects:@"5 phút",@"15 phút",@"1 giờ",@"1 ngày", nil]
+#define kOsVersion      [[[UIDevice currentDevice]systemVersion]floatValue]
+
+#endif
